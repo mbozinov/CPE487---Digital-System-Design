@@ -1,0 +1,107 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Apr 20 23:30:24 2020
+| Host         : Mitko-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopModule_control_sets_placed.rpt
+| Design       : TopModule
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    29 |
+|    Minimum number of control sets                        |    29 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   119 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    29 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             277 |          106 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             158 |           59 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             132 |           39 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+------------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|             Clock Signal             |                        Enable Signal                       |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++--------------------------------------+------------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  video_memory/reset_fin6_out         |                                                            |                                              |                1 |              1 |
+|  video_memory/alien_reached_end9_out |                                                            |                                              |                1 |              1 |
+|  line_clk_BUFG                       | pixel_driver/Vsync                                         | pixel_driver/Vsync_i_1_n_0                   |                1 |              1 |
+|  pixel_clk_BUFG                      | pixel_driver/Hsync                                         | pixel_driver/Hsync_i_1_n_0                   |                1 |              1 |
+|  refresh_BUFG                        |                                                            | keyboard_driver/reset0140_out                |                1 |              1 |
+|  refresh_BUFG                        |                                                            | keyboard_driver/ps2_code_reg[3]_2            |                1 |              1 |
+|  video_memory/temp_alien__0          |                                                            |                                              |                1 |              2 |
+|  refresh_BUFG                        | video_memory/spaceship_color0                              |                                              |                1 |              4 |
+|  refresh_BUFG                        | video_memory/spaceship_location_x[31]_i_1_n_0              | video_memory/spaceship_location_x[8]_i_1_n_0 |                1 |              4 |
+|  pixel_driver/E[0]                   |                                                            |                                              |                3 |              4 |
+|  clk_IBUF_BUFG                       | keyboard_driver/ps2_code0                                  |                                              |                3 |              8 |
+|  clk_IBUF_BUFG                       |                                                            |                                              |                4 |             10 |
+|  clk_IBUF_BUFG                       | keyboard_driver/debounce_PS2Clk/sel                        | keyboard_driver/debounce_PS2Clk/counter_set  |                3 |             10 |
+|  clk_IBUF_BUFG                       | keyboard_driver/debounce_PS2Data/counter_out[9]_i_2__0_n_0 | keyboard_driver/debounce_PS2Data/counter_set |                3 |             10 |
+|  refresh_BUFG                        | video_memory/alien_fire_pos_x0__0                          |                                              |                3 |             10 |
+| ~keyboard_driver/debounce_PS2Clk/CLK |                                                            |                                              |                2 |             11 |
+|  refresh_BUFG                        | video_memory/game_state_reg[1]_1[0]                        |                                              |                6 |             12 |
+|  pixel_driver/display_reg_0[0]       |                                                            |                                              |                4 |             12 |
+|  clk_IBUF_BUFG                       | keyboard_driver/count_idle[0]_i_2_n_0                      | keyboard_driver/debounce_PS2Clk/clear        |                4 |             13 |
+|  refresh_BUFG                        | video_memory/spaceship_location_x[31]_i_1_n_0              |                                              |               11 |             27 |
+|  refresh_BUFG                        | video_memory/alien_location_x[31]_i_2_n_0                  | video_memory/alien_location_x[31]_i_1_n_0    |                9 |             30 |
+|  refresh_BUFG                        | video_memory/game_state_reg[1]_1[0]                        | keyboard_driver/E[0]                         |                8 |             31 |
+|  refresh_BUFG                        |                                                            |                                              |               21 |             32 |
+|  refresh_BUFG                        | video_memory/alien_speed[31]_i_1_n_0                       |                                              |               17 |             32 |
+|  refresh_BUFG                        | video_memory/alien_location_y[31]_i_2_n_0                  | video_memory/alien_location_y[31]_i_1_n_0    |                9 |             32 |
+|  refresh_BUFG                        | keyboard_driver/E[0]                                       |                                              |                9 |             32 |
+|  refresh_BUFG                        | video_memory/alien_speed2                                  |                                              |                9 |             33 |
+|  pixel_clk_BUFG                      |                                                            |                                              |               25 |             69 |
+|  line_clk_BUFG                       |                                                            |                                              |               44 |            135 |
++--------------------------------------+------------------------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

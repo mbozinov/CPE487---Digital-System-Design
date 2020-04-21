@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 20 23:27:18 2020
+# Process ID: 15344
+# Current directory: C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.runs/synth_1
+# Command line: vivado.exe -log TopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModule.tcl
+# Log file: C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.runs/synth_1/TopModule.vds
+# Journal file: C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopModule.tcl -notrace
+Command: synth_design -top TopModule -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4876 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 877.004 ; gain = 235.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopModule' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/TopModule.vhd:12]
+INFO: [Synth 8-3491] module 'VGAPixelDriver' declared at 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VGAPixelDriver.vhd:5' bound to instance 'pixel_driver' of component 'VGAPixelDriver' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/TopModule.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'VGAPixelDriver' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VGAPixelDriver.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'VGAPixelDriver' (1#1) [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VGAPixelDriver.vhd:13]
+INFO: [Synth 8-3491] module 'VideoMemory' declared at 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:5' bound to instance 'video_memory' of component 'VideoMemory' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/TopModule.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'VideoMemory' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:15]
+WARNING: [Synth 8-614] signal 'display' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'reset_fin' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'last_alive' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'alien_location_y' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'spaceship_location_y' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'spaceship_location_x' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'box_location_x' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'box_location_y' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'fire_set_visible' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'alien_fire_pos_x' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'alien_fire_pos_y' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'alien_location_x' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'alien_prop' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'temp_alien' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1415]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1607]
+INFO: [Synth 8-256] done synthesizing module 'VideoMemory' (2#1) [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:15]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter debounce_counter_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/ps2_keyboard.vhd:4' bound to instance 'keyboard_driver' of component 'ps2_keyboard' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/TopModule.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/ps2_keyboard.vhd:16]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter debounce_counter_size bound to: 9 - type: integer 
+	Parameter counter_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/debounce.vhd:5' bound to instance 'debounce_PS2Clk' of component 'debounce' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/ps2_keyboard.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/debounce.vhd:14]
+	Parameter counter_size bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/debounce.vhd:14]
+	Parameter counter_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/debounce.vhd:5' bound to instance 'debounce_PS2Data' of component 'debounce' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/ps2_keyboard.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (4#1) [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/ps2_keyboard.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'TopModule' (5#1) [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/TopModule.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 954.805 ; gain = 313.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 954.805 ; gain = 313.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 954.805 ; gain = 313.668
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 954.805 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/constrs_1/new/BoardMasterNexysA7.xdc]
+Finished Parsing XDC File [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/constrs_1/new/BoardMasterNexysA7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/constrs_1/new/BoardMasterNexysA7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1075.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1075.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1075.113 ; gain = 433.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1075.113 ; gain = 433.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1075.113 ; gain = 433.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'generated_reg' into 'fire_set_visible_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1679]
+INFO: [Synth 8-5545] ROM "spaceship_color" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spaceship_color" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "background_1[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "alien_fire[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "spaceship_fire[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lost_screen[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "win_screen[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'red_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1421]
+WARNING: [Synth 8-327] inferring latch for variable 'green_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1422]
+WARNING: [Synth 8-327] inferring latch for variable 'blue_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1423]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_fin_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1437]
+WARNING: [Synth 8-327] inferring latch for variable 'alien_reached_end_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1440]
+WARNING: [Synth 8-327] inferring latch for variable 'last_alive_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1438]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_alien_reg' [C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.srcs/sources_1/new/VideoMemory.vhd:1498]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1075.113 ; gain = 433.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 32    
+	   3 Input     32 Bit       Adders := 11    
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 6     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 15    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	 480 Input    581 Bit        Muxes := 1     
+	 128 Input    454 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 4     
+	  14 Input      7 Bit        Muxes := 1     
+	  20 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 126   
+	   4 Input      4 Bit        Muxes := 48    
+	   2 Input      3 Bit        Muxes := 103   
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   4 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGAPixelDriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module VideoMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 28    
+	   3 Input     32 Bit       Adders := 11    
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 6     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 15    
++---Registers : 
+	               32 Bit    Registers := 5     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	 480 Input    581 Bit        Muxes := 1     
+	 128 Input    454 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 4     
+	  14 Input      7 Bit        Muxes := 1     
+	  20 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 48    
+	   2 Input      4 Bit        Muxes := 123   
+	   2 Input      3 Bit        Muxes := 103   
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 41    
+	  16 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "spaceship_color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[30]' (LD) to 'video_memory/last_alive_reg[31]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[31]' (LD) to 'video_memory/last_alive_reg[29]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[29]' (LD) to 'video_memory/last_alive_reg[28]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[28]' (LD) to 'video_memory/last_alive_reg[27]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[27]' (LD) to 'video_memory/last_alive_reg[26]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[26]' (LD) to 'video_memory/last_alive_reg[25]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[25]' (LD) to 'video_memory/last_alive_reg[24]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[24]' (LD) to 'video_memory/last_alive_reg[23]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[23]' (LD) to 'video_memory/last_alive_reg[22]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[22]' (LD) to 'video_memory/last_alive_reg[21]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[21]' (LD) to 'video_memory/last_alive_reg[20]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[20]' (LD) to 'video_memory/last_alive_reg[19]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[19]' (LD) to 'video_memory/last_alive_reg[18]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[18]' (LD) to 'video_memory/last_alive_reg[17]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[17]' (LD) to 'video_memory/last_alive_reg[16]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[16]' (LD) to 'video_memory/last_alive_reg[15]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[15]' (LD) to 'video_memory/last_alive_reg[14]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[14]' (LD) to 'video_memory/last_alive_reg[13]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[13]' (LD) to 'video_memory/last_alive_reg[12]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[12]' (LD) to 'video_memory/last_alive_reg[11]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[11]' (LD) to 'video_memory/last_alive_reg[10]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[10]' (LD) to 'video_memory/last_alive_reg[9]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[9]' (LD) to 'video_memory/last_alive_reg[8]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[8]' (LD) to 'video_memory/last_alive_reg[7]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[7]' (LD) to 'video_memory/last_alive_reg[6]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[6]' (LD) to 'video_memory/last_alive_reg[5]'
+INFO: [Synth 8-3886] merging instance 'video_memory/last_alive_reg[5]' (LD) to 'video_memory/last_alive_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (video_memory/\last_alive_reg[4] )
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[0]' (FDE) to 'video_memory/spaceship_color_reg[1]'
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[1]' (FDE) to 'video_memory/spaceship_color_reg[2]'
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[2]' (FDE) to 'video_memory/spaceship_color_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (video_memory/\spaceship_color_reg[3] )
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[4]' (FDE) to 'video_memory/spaceship_color_reg[5]'
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[8]' (FDE) to 'video_memory/spaceship_color_reg[9]'
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[9]' (FDE) to 'video_memory/spaceship_color_reg[10]'
+INFO: [Synth 8-3886] merging instance 'video_memory/spaceship_color_reg[10]' (FDE) to 'video_memory/spaceship_color_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (video_memory/i_17/\box_location_y_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (last_alive_reg[4]) is unused and will be removed from module VideoMemory.
+WARNING: [Synth 8-3332] Sequential element (temp_alien_reg[0]) is unused and will be removed from module VideoMemory.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1153.242 ; gain = 512.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------+---------------+----------------+
+|Module Name | RTL Object      | Depth x Width | Implemented As | 
++------------+-----------------+---------------+----------------+
+|VideoMemory | spaceship[0]    | 128x5         | LUT            | 
+|VideoMemory | alien_type1[0]  | 64x8          | LUT            | 
+|VideoMemory | alien_type2[0]  | 64x10         | LUT            | 
+|VideoMemory | alien_type3[0]  | 64x5          | LUT            | 
+|VideoMemory | start_screen[0] | 512x598       | LUT            | 
+|VideoMemory | spaceship[0]    | 128x5         | LUT            | 
+|VideoMemory | alien_type1[0]  | 64x8          | LUT            | 
+|VideoMemory | alien_type3[0]  | 64x5          | LUT            | 
+|VideoMemory | start_screen[0] | 512x598       | LUT            | 
++------------+-----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1153.242 ; gain = 512.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 1153.242 ; gain = 512.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1161.621 ; gain = 520.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |   617|
+|3     |LUT1   |   258|
+|4     |LUT2   |  1021|
+|5     |LUT3   |   284|
+|6     |LUT4   |  1649|
+|7     |LUT5   |   613|
+|8     |LUT6   |  2055|
+|9     |MUXF7  |   308|
+|10    |MUXF8  |    39|
+|11    |FDCE   |     1|
+|12    |FDPE   |     1|
+|13    |FDRE   |   533|
+|14    |FDSE   |    14|
+|15    |LD     |    20|
+|16    |IBUF   |    15|
+|17    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------+------+
+|      |Instance             |Module         |Cells |
++------+---------------------+---------------+------+
+|1     |top                  |               |  7446|
+|2     |  keyboard_driver    |ps2_keyboard   |   117|
+|3     |    debounce_PS2Clk  |debounce       |    28|
+|4     |    debounce_PS2Data |debounce_0     |    27|
+|5     |  pixel_driver       |VGAPixelDriver |  2589|
+|6     |  video_memory       |VideoMemory    |  4563|
++------+---------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:01:33 . Memory (MB): peak = 1167.406 ; gain = 405.961
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.406 ; gain = 526.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1173.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 984 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1173.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  LD => LDCE: 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 1173.762 ; gain = 842.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1173.762 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitko/Desktop/FinalProject_DSD/FinalProject_DSD.runs/synth_1/TopModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopModule_utilization_synth.rpt -pb TopModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 23:29:12 2020...
