@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr 21 14:46:50 2020
+# Process ID: 6556
+# Current directory: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.runs/synth_1
+# Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
+# Log file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.runs/synth_1/vga_top.vds
+# Journal file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_top.tcl -notrace
+Command: synth_design -top vga_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 877.566 ; gain = 235.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_top' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_top.vhd:16]
+INFO: [Synth 8-3491] module 'ball' declared at 'C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/ball.vhd:6' bound to instance 'add_ball' of component 'ball' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_top.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ball' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/ball.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ball' (1#1) [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/ball.vhd:18]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_sync.vhd:5' bound to instance 'vga_driver' of component 'vga_sync' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_top.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_sync.vhd:21]
+WARNING: [Synth 8-6014] Unused sequential element video_on_reg was removed.  [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_sync.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_sync.vhd:21]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_top.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0.vhd:83]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:63' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:72]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 25.312500 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:114]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:176]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:183]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (3#1) [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (4#1) [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/clk_wiz_0.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'vga_top' (5#1) [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/sources_1/new/vga_top.vhd:16]
+WARNING: [Synth 8-3917] design vga_top has port vga_red[1] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_red[0] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_green[1] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_green[0] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_blue[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 950.504 ; gain = 308.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 950.504 ; gain = 308.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 950.504 ; gain = 308.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 950.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/constrs_1/new/vga_top.xdc]
+Finished Parsing XDC File [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/constrs_1/new/vga_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.srcs/constrs_1/new/vga_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1045.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.543 ; gain = 403.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.543 ; gain = 403.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.543 ; gain = 403.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.543 ; gain = 403.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 6     
++---Registers : 
+	               11 Bit    Registers := 8     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP add_ball/green2, operation Mode is: (D'-A)*B.
+DSP Report: register vga_driver/pixel_row_reg is absorbed into DSP add_ball/green2.
+DSP Report: operator add_ball/green2 is absorbed into DSP add_ball/green2.
+DSP Report: operator add_ball/green3 is absorbed into DSP add_ball/green2.
+DSP Report: Generating DSP add_ball/green1, operation Mode is: PCIN+(D'-A)*B.
+DSP Report: register vga_driver/pixel_col_reg is absorbed into DSP add_ball/green1.
+DSP Report: operator add_ball/green1 is absorbed into DSP add_ball/green1.
+DSP Report: operator add_ball/green2 is absorbed into DSP add_ball/green1.
+DSP Report: operator add_ball/green3 is absorbed into DSP add_ball/green1.
+WARNING: [Synth 8-3917] design vga_top has port vga_red[1] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_red[0] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_green[1] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_green[0] driven by constant 0
+WARNING: [Synth 8-3917] design vga_top has port vga_blue[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[0]' (FDRE) to 'add_ball/ball_y_motion_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/ball_y_motion_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\add_ball/ball_y_motion_reg[2] )
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[3]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[4]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[5]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[6]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[7]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[8]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_y_motion_reg[9]' (FDSE) to 'add_ball/ball_y_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[0]' (FDRE) to 'add_ball/ball_x_motion_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/ball_x_motion_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\add_ball/ball_x_motion_reg[2] )
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[3]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[4]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[5]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[6]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[7]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[8]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_ball/ball_x_motion_reg[9]' (FDSE) to 'add_ball/ball_x_motion_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/plusOp_inferred__2 /\add_ball/ball_y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/plusOp_inferred__0 /\add_ball/ball_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/plusOp_inferred__2 /\add_ball/ball_y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ball/plusOp_inferred__0 /\add_ball/ball_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'vga_driver/blue_out_reg' (FD) to 'vga_driver/green_out_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1045.543 ; gain = 403.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_top     | (D'-A)*B      | 11     | 12     | -      | 11     | 24     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|vga_top     | PCIN+(D'-A)*B | 11     | 12     | -      | 11     | 24     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1067.727 ; gain = 425.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1089.570 ; gain = 447.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1089.953 ; gain = 448.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    17|
+|3     |DSP48E1    |     2|
+|4     |LUT1       |     9|
+|5     |LUT2       |    70|
+|6     |LUT3       |     5|
+|7     |LUT4       |     9|
+|8     |LUT5       |     9|
+|9     |LUT6       |    22|
+|10    |MMCME2_ADV |     1|
+|11    |FDRE       |    68|
+|12    |IBUF       |     1|
+|13    |OBUF       |    10|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  |   225|
+|2     |  add_ball       |ball              |    97|
+|3     |  clk_wiz_0_inst |clk_wiz_0         |     3|
+|4     |    U0           |clk_wiz_0_clk_wiz |     3|
+|5     |  vga_driver     |vga_sync          |   114|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1094.734 ; gain = 357.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1094.734 ; gain = 452.789
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1094.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1104.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1104.805 ; gain = 774.008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1104.805 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 3 - Bouncing Ball/Lab 3 - Bouncing Ball.runs/synth_1/vga_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_top_utilization_synth.rpt -pb vga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 21 14:47:46 2020...
