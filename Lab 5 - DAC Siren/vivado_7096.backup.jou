@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 23 13:03:21 2020
+# Process ID: 7096
+# Current directory: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26484 C:\Users\Mitko\Desktop\CPE487 Digital System Design\Lab 5 - DAC Siren\Lab 5 - DAC Siren.xpr
+# Log file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren/vivado.log
+# Journal file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren/Lab 5 - DAC Siren.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
