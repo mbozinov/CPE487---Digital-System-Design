@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 27 20:12:37 2020
+# Process ID: 19476
+# Current directory: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren/Lab 5 - DAC Siren.runs/impl_1
+# Command line: vivado.exe -log siren.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source siren.tcl -notrace
+# Log file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren/Lab 5 - DAC Siren.runs/impl_1/siren.vdi
+# Journal file: C:/Users/Mitko/Desktop/CPE487 Digital System Design/Lab 5 - DAC Siren/Lab 5 - DAC Siren.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source siren.tcl -notrace
